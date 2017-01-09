@@ -1,0 +1,13 @@
+<div class='center'>
+	<h1 class='heading'>1000 most used english words</h1>
+	<form class='input'>
+		<input type='text' ng-model='typed' ng-change='getSuggestions(typed)'>
+		<input type='submit' value='translate'>
+	</form>
+
+	<div class='suggestions' ng-if=showSuggestions()>
+		<div class='word-wrap' ng-repeat='word in suggested'>
+			<a href='#' ng-click='setWord(word)' class='word'><span>{{word}}</span></a>
+		</div>
+	</div>
+</div>

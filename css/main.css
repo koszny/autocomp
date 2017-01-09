@@ -1,0 +1,28 @@
+.input {
+	margin-bottom: 0em;
+}
+
+.center {
+	margin: auto;
+	padding: 3em;
+	background-color: #cccccc;
+	width: 400px;
+	height: 400px;
+}
+
+.heading {
+	font-family: sans;
+	font-size: 1.5em;
+}
+.suggestions {
+	width: 10em;
+	background-color: #ffffff;
+	padding-left: 0.2em;
+    border: 1px solid black;
+}
+
+.word-wrap a:link, .word-wrap a:visited, .word-wrap a:hover, word-wrap a:active {
+	font-family: sans;
+	text-decoration: none;
+	color: black;
+}
