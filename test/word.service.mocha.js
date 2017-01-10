@@ -12,13 +12,13 @@ describe('word service', () => {
 	it('should not return more than four elements starting with a', () => {
 		const wordArray = ['aa', 'ab', 'ac', 'ad', 'ae', 'af', 'ag'];
 		const ws = wordService(wordArray);
-		assert.deepEqual(ws.getMatched('a').length, 4);
+		assert.strictEqual(ws.getMatched('a').length, 4);
 	});
 	
 	it('should return no elements for empty string', () => {
 		const wordArray = ['aa', 'ab', 'ac', 'ad', 'ae', 'af', 'ag'];
 		const ws = wordService(wordArray);
-		assert.deepEqual(ws.getMatched('').length, 0);
+		assert.strictEqual(ws.getMatched('').length, 0);
 	});
 	
 });
